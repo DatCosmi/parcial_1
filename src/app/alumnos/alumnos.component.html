@@ -1,1 +1,8 @@
-<p>alumnos works!</p>
+<div class="flex flex-wrap justify-around mt-10">
+    <div class="text-center m-4" *ngFor="let persona of personas">
+      <img [src]="persona.foto" alt="{{ persona.nombre }}" (click)="descargarCV(persona.cv)"
+           class="w-36 h-36 rounded-full cursor-pointer transition-transform transform hover:scale-110 mx-auto">
+      <h3 class="mt-4 text-lg font-semibold">{{ persona.nombre }}</h3>
+    </div>
+  </div>
+  
