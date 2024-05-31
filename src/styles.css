@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 10vw 1fr;
+}
+
+.grid-item {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  background-color: #19202c;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 13vw;
+  overflow-y: auto;
+  padding-top: 1vw;
+  box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #2d3748;
+}
+
+.active-link {
+  background-color: #2d3748;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 1vw;
+}
