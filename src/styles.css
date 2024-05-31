@@ -4,7 +4,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 10vw 1fr;
+  grid-template-columns: 250px 1fr;
 }
 
 .grid-item {
@@ -17,7 +17,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 13vw;
+  width: 250px;
   overflow-y: auto;
   padding-top: 1vw;
   box-shadow: 0 4px 100px rgba(0, 0, 0, 0.2);
@@ -46,5 +46,5 @@
 }
 
 .logo {
-  font-size: 1vw;
+  font-size: 1.3rem;
 }
