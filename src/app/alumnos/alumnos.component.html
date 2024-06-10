@@ -1,8 +1,28 @@
 <div class="flex flex-wrap justify-around mt-10">
-    <div class="text-center m-4" *ngFor="let persona of personas">
+  <div class="text-center m-6 max-w-xs" *ngFor="let persona of personas">
+    <div class="relative">
       <img [src]="persona.foto" alt="{{ persona.nombre }}" (click)="descargarCV(persona.cv)"
-           class="w-36 h-36 rounded-full cursor-pointer transition-transform transform hover:scale-110 mx-auto">
-      <h3 class="mt-4 text-lg font-semibold">{{ persona.nombre }}</h3>
+           class="w-36 h-36 rounded-full cursor-pointer transition-transform transform hover:scale-110 mx-auto shadow-lg">
+      <div class="absolute inset-0 flex items-center justify-center">
+        <div class="opacity-0 hover:opacity-80 bg-black bg-opacity-50 rounded-full w-36 h-36 flex items-center justify-center transition-opacity duration-300">
+          <button (click)="descargarCV(persona.cv)" class="text-white text-sm font-semibold">Descargar CV</button>
+        </div>
+      </div>
     </div>
+    <h3 class="mt-4 text-lg font-semibold text-gray-800">{{ persona.nombre }}</h3>
   </div>
-  
+</div>
+
+<!-- Enlace al tablero de Jira -->
+<div class="flex flex-wrap justify-around mt-10">
+  <div class="text-center m-6 max-w-xs">
+  <a href="https://proyectoparcial1.atlassian.net/jira/software/projects/P1/boards/1?atlOrigin=eyJpIjoiNDY3MjZjZjlhNzgxNGQzZTliMGYyODgyN2Q3OTg2MDEiLCJwIjoiaiJ9"
+     target="_blank" class="flex items-center text-blue-500 hover:text-blue-700 text-lg font-semibold transition-colors">
+    <div class="rounded-full bg-blue-500 text-white p-2 mr-2">
+      <i class="fab fa-jira w-6 h-6"></i>
+    </div>
+    
+    Visitar el tablero
+  </a>
+</div>
+</div>

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './diagrama.component.css'
 })
 export class DiagramaComponent {
+  diagramaSrc: string = 'https://herrerateam.projectsutd.online/MapaConceptualRiesgos.png'; // Actualiza esta ruta con la ubicación real de tu imagen
 
 }

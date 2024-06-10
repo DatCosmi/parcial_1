@@ -8,23 +8,26 @@ import { Component } from '@angular/core';
 export class AlumnosComponent {
   personas = [
     {
-      nombre: 'Carlos Ivan Lopez Garcia',
-      foto: 'https://drive.google.com/file/d/1FOGxajuK8szvzp5Qlf-yjMtxzm5KZHEH/view?usp=drive_link',  // Cambiar a ruta absoluta
-      cv: '../../assets/IvanGarcia_CV.pdf'  // Cambiar a ruta absoluta
+      nombre: 'Carlos Ivan Garcia Lopez',
+      foto: 'https://herrerateam.projectsutd.online/ivanfoto.png',  // Cambiar a ruta absoluta
+      cv: 'https://drive.google.com/file/d/1FOGxajuK8szvzp5Qlf-yjMtxzm5KZHEH/view?usp=drive_link'  // Cambiar a ruta absoluta
     },
     {
       nombre: 'Paola Herrera Ortiz',
-      foto: 'https://drive.google.com/file/d/1Fb2T3Sxh3iqh7TXRtlw-QcNnKnOqqZcS/view?usp=drive_link',  // Cambiar a ruta absoluta
-      cv: '../../assets/Curriculum.pdf'  // Cambiar a ruta absoluta
+      foto: 'https://herrerateam.projectsutd.online/paola-modified.png',  // Cambiar a ruta absoluta
+      cv: 'https://drive.google.com/file/d/1iF27vipamHUQmdj2NN0xa4cugmFYeCo-/view?usp=drive_link'  // Cambiar a ruta absoluta
     },
     {
       nombre: 'Jose Samuel Reyna Gonzalez',
-      foto: '../../assets/persona3.jpg',  // Cambiar a ruta absoluta
-      cv: '../../assets/SamuelReyna_CV.pdf'  // Cambiar a ruta absoluta
+      foto: 'https://herrerateam.projectsutd.online/yo.png',  // Cambiar a ruta absoluta
+      cv: 'https://drive.google.com/file/d/1eNNSfQsIoLDazsN6NeCoXE462IKAqQO1/view?usp=drive_link'  // Cambiar a ruta absoluta
     }
   ];
 
   descargarCV(cv: string) {
     window.open(cv, '_blank');
+  }
+  abrirTableroJira() {
+    window.open('https://proyectoparcial1.atlassian.net/jira/software/projects/P1/boards/1?atlOrigin=eyJpIjoiNDY3MjZjZjlhNzgxNGQzZTliMGYyODgyN2Q3OTg2MDEiLCJwIjoiaiJ9', '_blank');
   }
 }
