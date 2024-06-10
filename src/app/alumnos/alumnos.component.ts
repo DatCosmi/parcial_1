@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-alumnos',
   templateUrl: './alumnos.component.html',
-  styleUrl: './alumnos.component.css'
+  styleUrl: './alumnos.component.css',
 })
 export class AlumnosComponent {
   personas = [
@@ -22,7 +22,7 @@ export class AlumnosComponent {
       foto: 'https://herrerateam.projectsutd.online/yo.png',  // Cambiar a ruta absoluta
       cv: 'https://drive.google.com/file/d/1eNNSfQsIoLDazsN6NeCoXE462IKAqQO1/view?usp=drive_link'  // Cambiar a ruta absoluta
     }
-  ];
+  ]    
 
   descargarCV(cv: string) {
     window.open(cv, '_blank');
