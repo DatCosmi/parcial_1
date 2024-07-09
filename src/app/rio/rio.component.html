@@ -1,0 +1,29 @@
+<div class="container">
+  <h1>Calculadora de Retorno de Inversión</h1>
+
+  <form (ngSubmit)="calcularROI()">
+    <label for="inversion">Inversión:</label>
+    <input
+      type="number"
+      id="inversion"
+      [(ngModel)]="inversion"
+      name="inversion"
+      min="0"
+      required
+    />
+
+    <label for="beneficio">Beneficio:</label>
+    <input
+      type="number"
+      id="beneficio"
+      [(ngModel)]="beneficio"
+      name="beneficio"
+      min="0"
+      required
+    />
+
+    <button type="submit">Calcular ROI</button>
+  </form>
+
+  <div *ngIf="mensaje" class="resultado">{{ mensaje }}</div>
+</div>

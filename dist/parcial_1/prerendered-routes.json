@@ -1,7 +1,13 @@
 {
   "routes": [
     "/alumnos",
+    "/calculadoras",
     "/conceptos",
-    "/diagrama"
+    "/diagrama",
+    "/efectivdad_eficiencia_eficacia",
+    "/efectividad_cotidiana",
+    "/efectividad_empresarial",
+    "/login",
+    "/rio"
   ]
 }

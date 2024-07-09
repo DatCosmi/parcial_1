@@ -1,0 +1,44 @@
+<div class="container">
+  <h1>Calculadora de Efectividad en la Producción</h1>
+
+  <form (ngSubmit)="calcularEficienciaEfectividad()">
+    <label for="unidades_producidas">Unidades producidas:</label>
+    <input
+      type="number"
+      id="unidades_producidas"
+      [(ngModel)]="unidadesProducidas"
+      name="unidades_producidas"
+      min="0"
+      required
+    />
+
+    <label for="tiempo_planeado">Tiempo planeado:</label>
+    <input
+      type="number"
+      id="tiempo_planeado"
+      [(ngModel)]="tiempoPlaneado"
+      name="tiempo_planeado"
+      min="0"
+      step="0.01"
+      required
+    />
+
+    <label for="tiempo_real">Tiempo real:</label>
+    <input
+      type="number"
+      id="tiempo_real"
+      [(ngModel)]="tiempoReal"
+      name="tiempo_real"
+      min="0"
+      step="0.01"
+      required
+    />
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div *ngIf="eficiencia !== null && efectividad !== null" class="resultado">
+    <p>Eficiencia: {{ eficiencia.toFixed(2) }}%</p>
+    <p>Efectividad: {{ efectividad.toFixed(2) }}%</p>
+  </div>
+</div>

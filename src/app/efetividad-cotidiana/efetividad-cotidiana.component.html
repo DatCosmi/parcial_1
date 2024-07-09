@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>Calculadora de Efectividad</h1>
+
+  <form (ngSubmit)="calcularEfectividad()" #formulario="ngForm">
+    <label for="realizados">Logros alcanzados:</label>
+    <input
+      type="number"
+      id="realizados"
+      name="realizados"
+      min="0"
+      required
+      [(ngModel)]="realizados"
+    />
+
+    <label for="total">Total de objetivos:</label>
+    <input
+      type="number"
+      id="total"
+      name="total"
+      min="1"
+      required
+      [(ngModel)]="total"
+      ngModel
+    />
+
+    <button type="submit">Calcular</button>
+  </form>
+
+  <div class="resultado" *ngIf="efectividad !== null">
+    <p>Efectividad: {{ efectividad }}%</p>
+  </div>
+</div>
